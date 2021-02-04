@@ -17,7 +17,8 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "webpack": "webpack --config ./client/webpack.config.js",
-    "lint": "eslint --ext .js,.jsx ."
+    "lint": "eslint --ext .js,.jsx .",
+    "knex": "knex --knexfile server/db/knexfile.js"
   },
   "keywords": [
     "fullstack"
@@ -39,7 +40,10 @@
     ]
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.21.17",
+    "sqlite3": "^4.2.0",
+    "superagent": "^6.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
