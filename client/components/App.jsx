@@ -6,8 +6,14 @@ import TrumpQuote from './TrumpQuote'
 const App = () => {
   return (
     <>
-    <h1>React development has begun!</h1>
+    <div className="container">
+    <div className="content">
+    <div className="bgColour">
+    <h1>Tronald Dump Quote Generator</h1>
+    </div>
     <TrumpQuote />
+    </div>
+    </div>
     </>
   )
 }
