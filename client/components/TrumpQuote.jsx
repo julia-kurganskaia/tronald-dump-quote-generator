@@ -33,8 +33,8 @@ const TrumpQuote = () => {
             <button onClick={handleClick} className='gradient-button gradient-button-2 bouncy'>
                 Generate Quote
             </button>
-            {quote && <p>"{quote}" <br></br>- Tronald Dump</p>}
-            {image && <><img src={image} /><button>translate</button></>}
+            {quote && <p>"{quote}"</p>}
+            {image && <><img src={image} /><button className='gradient-button gradient-button-2 bouncy'>translate</button></>}
 
         </>
     )

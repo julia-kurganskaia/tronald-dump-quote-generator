@@ -37,6 +37,9 @@ img {
 
 p {
     text-align: center;
+    margin-bottom: 40px; 
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
 }
 
 h1{
@@ -86,6 +89,7 @@ h1{
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     cursor: pointer;
     display: inline-block;
+    outline: none;
 }
 .gradient-button:hover{
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
