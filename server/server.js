@@ -7,7 +7,7 @@ const server = express()
 server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
 
-server.use('/', images)
+server.use('/api/images', images)
 // server.use('/api/v1/widgets', widgets)
 
 module.exports = server
