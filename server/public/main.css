@@ -1,3 +1,101 @@
-body {
-    
+@font-face {
+    font-family: 'Texas';
+    src: url('texas.otf');
+    font-weight: normal;
+    font-style: normal;
 }
+
+body {
+    background: url(./flag.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 960px;
+    max-width: 960px ;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+img {
+    min-width: 60%;
+    max-width: 60%;
+    border-radius: 25px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 40px; 
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+}
+
+h1{
+    font-family: 'Texas';
+    font-size: 47px;
+    background-image: linear-gradient(to left, rgb(75, 75, 255), white, red); 
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+}
+
+.bgColour{
+    border-radius: 25px;
+    padding: 0px 20px;
+    background-color: rgb(9, 9, 117);
+}
+
+.bouncy {
+    animation:bouncy 2s infinite linear;
+    position:relative;
+}
+
+@keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+}
+
+.gradient-button {
+    margin: 30px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+}
+.gradient-button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.gradient-button-2 {
+    background-image: linear-gradient(to right, rgb(75, 75, 255) 0%, white 51%, red 100%)}
+
+.gradient-button-2:hover { background-position: right center; }
