@@ -17,7 +17,8 @@ const YodaTalk = (props) => {
 
     return (
         <>
-        <button onClick={() => {translateToYoda(props.quote)}}>
+        <button onClick={() => {translateToYoda(props.quote)}}
+        className='gradient-button gradient-button-2 bouncy' >
             Click me
         </button>
         {translation && <p>{translation}</p>}

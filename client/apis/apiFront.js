@@ -18,7 +18,7 @@ export function getQuote () {
 // }
 
 export function getTranslation (quote) {
-    return request.get('yoda/' + quote)
+    return request.get('/api/images/yoda/' + quote)
         .send({ "text" : quote })
         .then(res => res.body)
 }

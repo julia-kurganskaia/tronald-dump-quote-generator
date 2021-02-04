@@ -17,6 +17,7 @@ router.get('/:id', (req, res) => {
   })
 
 router.get('/yoda/:query', (req, res) => {
+  console.log('hi there')
   const yodaURL = 'https://api.funtranslations.com/translate/yoda.json'
   // const yodaURL = 'http://yoda-api.appspot.com/api/v1/yodish?text='
     request
