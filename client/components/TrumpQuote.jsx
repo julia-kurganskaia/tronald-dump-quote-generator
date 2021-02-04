@@ -30,10 +30,10 @@ const TrumpQuote = () => {
    
     return (
         <>
-            <button onClick={handleClick}>
-                Click me!
+            <button onClick={handleClick} className='gradient-button gradient-button-2 bouncy'>
+                Generate Quote
             </button>
-            {quote && <p>{quote}</p>}
+            {quote && <p>"{quote}" <br></br>- Tronald Dump</p>}
             {image && <><img src={image} /><button>translate</button></>}
 
         </>
