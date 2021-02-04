@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
+
 import { getQuote } from '../apis/apiFront'
-// import { getImages } form '../apis/apiBack' 
+import { getImages } from '../apis/apiBack' 
 
 const TrumpQuote = () => {
     const [quote, setQuote] = useState('')
@@ -13,10 +14,18 @@ const TrumpQuote = () => {
                     .then(setImage)
             })
     }
+    const fetchImage = (id) => {
+        getImages(id)
+            .then(img => {
+                console.log(img)
+                setImage(img.image)
+            })
+    }
 
     const handleClick = () => {
+        const rando = Math.floor( (Math.random() * 14) +1)
         fetchQuote()
-            .the
+        fetchImage(rando)
     }
    
     return (
@@ -25,7 +34,7 @@ const TrumpQuote = () => {
                 Click me!
             </button>
             {quote && <p>{quote}</p>}
-            {image && <><img src={} /><button>translate</button></>}
+            {image && <><img src={image} /><button>translate</button></>}
 
         </>
     )

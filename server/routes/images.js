@@ -4,12 +4,14 @@ const router = express.Router()
 const db = require('../db/db')
 
 router.get('/', (req, res) => {
-    db.getImages()
+    db.getImages(req.body.id)
       .then(images => {
         res.json(images)
-        return null
+        // return null
       })
       .catch(err => {
         res.status(500).send(err.message)
       })
   })
+
+module.exports = router
