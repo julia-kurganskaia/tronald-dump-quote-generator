@@ -1,6 +1,6 @@
 import request from 'superagent'
 
-const baseUrl = 'api.tronalddump.io/'
+
 
 export function getImages () {
     return request
