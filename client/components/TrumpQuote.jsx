@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import { getQuote } from '../apis/apiFront'
 import { getImages } from '../apis/apiBack' 
+import YodaTalk from './YodaTalk'
 
 const TrumpQuote = () => {
     const [quote, setQuote] = useState('')
@@ -21,6 +22,13 @@ const TrumpQuote = () => {
                 setImage(img.image)
             })
     }
+    // const fetchImage = (id) => {
+    //     getImages(id)
+    //         .then(img => {
+    //             console.log(img)
+    //             setImage(img.image)
+    //         })
+    // }
 
     const handleClick = () => {
         const rando = Math.floor( (Math.random() * 14) +1)
@@ -33,7 +41,8 @@ const TrumpQuote = () => {
             <button onClick={handleClick} className='gradient-button gradient-button-2 bouncy'>
                 Generate Quote
             </button>
-            {quote && <p>"{quote}"</p>}
+            {quote && <p>{quote}</p>}
+            {quote && <YodaTalk quote={quote} />}
             {image && <><img src={image} /><button className='gradient-button gradient-button-2 bouncy'>translate</button></>}
 
         </>
