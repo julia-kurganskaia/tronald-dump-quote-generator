@@ -12,7 +12,14 @@ const TrumpQuote = () => {
         getQuote()
             .then(quote => {
                 setQuote(quote.value)
-                    // .then(setImage)
+            })
+    }
+
+    const fetchImage = (id) => {
+        getImages(id)
+            .then(img => {
+                console.log('fetchimage', img)
+                setImage(img.image)
             })
     }
     // const fetchImage = (id) => {
@@ -26,7 +33,7 @@ const TrumpQuote = () => {
     const handleClick = () => {
         const rando = Math.floor( (Math.random() * 14) +1)
         fetchQuote()
-        // fetchImage(rando)
+        fetchImage(rando)
     }
    
     return (
