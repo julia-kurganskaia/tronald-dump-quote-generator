@@ -1,10 +1,8 @@
 import request from 'superagent'
 
-
 export function getImages (id) {
-    // console.log(id)
+    console.log('api', id)
     return request
-      .get('/')
-      .send( {id: id} )
+      .get('/api/images/' + id)
       .then(response => response.body)
   }

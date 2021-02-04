@@ -11,13 +11,13 @@ const TrumpQuote = () => {
         getQuote()
             .then(quote => {
                 setQuote(quote.value)
-                    .then(setImage)
             })
     }
+
     const fetchImage = (id) => {
         getImages(id)
             .then(img => {
-                console.log(img)
+                console.log('fetchimage', img)
                 setImage(img.image)
             })
     }
