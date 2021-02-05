@@ -15,16 +15,18 @@ body {
 
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 1280px;
+    margin: 0 auto;
 }
 
 .content{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    width: 960px;
-    max-width: 960px ;
+    width: 800px;
     padding: 25px;
     border-radius: 25px;
 }
@@ -40,10 +42,14 @@ p {
     margin-bottom: 40px; 
     font-family: 'Roboto Mono', monospace;
     font-size: 30px;
+    background-color: rgb(196, 196, 196);
+    padding: 20px;
+    border-radius: 20px;
 }
 
 h1{
     font-family: 'Texas';
+    text-align: center;
     font-size: 47px;
     background-image: linear-gradient(to left, rgb(75, 75, 255), white, red); 
     -webkit-background-clip: text;
@@ -73,7 +79,8 @@ h1{
 }
 
 .gradient-button {
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 20px;
     padding: 15px;
@@ -98,6 +105,24 @@ h1{
 .gradient-button-2 {
     background-image: linear-gradient(to right, rgb(75, 75, 255) 0%, white 51%, red 100%)}
 
+iframe {
+    margin: 40px;
+    border-radius: 5px;
+}
+
+.gradient-button-2:hover { background-position: right center; }
+
+.sidebar {
+    background-image: url('https://media.giphy.com/media/NSG3IRHSnUdna/giphy.gif');
+    width: 194px;
+    height: 100%;
+    background-size: contain;
+    }
+
+.sideContainer {
+    align-items: center;
+}
+
 .gradient-button-2:hover { background-position: right center; }
 
 .yoda-button {
@@ -117,5 +142,3 @@ h1{
 .troda-img:hover {
     cursor: pointer;
 }
-
-
