@@ -42,7 +42,7 @@ const TrumpQuote = () => {
                 Generate Quote
             </button>
             {quote && <p>"{quote}"</p>}
-            {image && <img src={image} />}
+            {image && <img className="main-img" src={image} />}
             
             {quote && <YodaTalk 
                 quote={quote} 
