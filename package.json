@@ -6,6 +6,9 @@
   "main": "server/index.js",
   "author": "EDA",
   "license": "ISC",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
     "client": "webpack serve --config ./client/webpack.config.js --hot",
     "dev": "run-p dev:client dev:server",
